@@ -29,7 +29,8 @@ public class LoginActivity extends MainActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String username = edUsername.getText().toString();
+                startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+                /*String username = edUsername.getText().toString();
                 String password = edPassword.getText().toString();
                 Database db = new Database(getApplicationContext(), "healthcare", null, 1);
                 if (username.length() == 0 || password.length() == 0) {
@@ -46,7 +47,7 @@ public class LoginActivity extends MainActivity {
                     } else {
                         Toast.makeText(getApplicationContext(), "Invalid Username or Password ", Toast.LENGTH_SHORT).show();
                     }
-                }
+                }*/
             }
         });
 
